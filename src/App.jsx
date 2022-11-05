@@ -1,15 +1,25 @@
 import { useState } from 'react';
-
-import { Button, Header } from './Components';
+import { Button, Header, Footer } from './Components';
 
 function App() {
   return (
-    <div className="">
-      <header className="bg-white shadow">
-        <Header>Hola</Header>
+    <>
+      <header>
+        <div className="bg-white shadow">
+          <Header title="Álvaro Sebastián" subtitle="Software Developer">
+            Álvaro Sebastián
+          </Header>
+        </div>
       </header>
-
-    </div>
+      <main>
+        <div className="mx-auto max-w-7xl py-6 px-6">
+          😊
+        </div>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   );
 }
 
