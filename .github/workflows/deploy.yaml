@@ -52,8 +52,11 @@ jobs:
         name: production-files
         path: ./dist
 
-    - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Deploy to ftp
+      uses: genietim/ftp-action@releases/v4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
+        host: ${{ secrets.domain }}
+        user: ${{ secrets.username }}
+        password: ${{ secrets.ftp_password }}
+        localDir: "dist"
+        remoteDir: ${{ secrets.remote_dir }}
