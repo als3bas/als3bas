@@ -20,7 +20,7 @@ jobs:
     - name: 🌍 Using PNPM
       uses: pnpm/action-setup@v2
       with:
-        version: 6.0.2
+        version: latest
     
     - name: 🌍 Install Node.js
       uses: actions/setup-node@v3
