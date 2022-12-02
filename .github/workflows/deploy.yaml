@@ -55,8 +55,8 @@ jobs:
     - name: Deploy to ftp
       uses: genietim/ftp-action@releases/v4
       with:
-        host: ${{ secrets.domain }}
-        user: ${{ secrets.username }}
-        password: ${{ secrets.ftp_password }}
+        host: ${{ secrets.DOMAIN }}
+        user: ${{ secrets.USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
         localDir: "dist"
-        remoteDir: ${{ secrets.remote_dir }}
+        remoteDir: ${{ secrets.REMOTE_DIR }}
