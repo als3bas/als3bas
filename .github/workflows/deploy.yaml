@@ -14,51 +14,33 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout code
+    - name: 🌍 Checkout code
       uses: actions/checkout@v2
 
-    - name: Using PNPM
+    - name: 🌍 Using PNPM
       uses: pnpm/action-setup@v2
       with:
         version: 6.0.2
     
-    - name: Install Node.js
+    - name: 🌍 Install Node.js
       uses: actions/setup-node@v1
       with:
         node-version: 16.x
 
-    - name: Install NPM packages
+    - name: 📦 Install NPM packages
       run: pnpm i
     
-    - name: Build project
+    - name: 🔧 Build project
       run: pnpm run build
 
-    - name: Upload production-ready build files
-      uses: actions/upload-artifact@v2
-      with:
-        name: production-files
-        path: ./dist
-  
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-    
-    steps:
-    - name: Download artifact
-      uses: actions/download-artifact@v2
-      with:
-        name: production-files
-        path: ./dist
+    - name: 📦 Install FTP
+      run: sudo apt install lftp
 
-    - name: Deploy to ftp
-      uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
-      with:
-        ftp_host: ${{ secrets.DOMAIN }}
-        ftp_username: ${{ secrets.USERNAME }}
-        ftp_password: ${{ secrets.FTP_PASSWORD }}
-        local_source_dir: "dist/*"
-        dist_target_dir: ${{ secrets.REMOTE_DIR }}
-        delete: "true"
-        exlude: "'^README.md'"
+    - name: 🛠️ Configure FTP
+      run: mkdir ~/.lftp && echo "set ssl:verify-certificate false;" >> ~/.lftp/rc
+
+    - name: 🔓 Load Secrets
+      run: echo "machine ${{ secrets.DOMAIN }} login ${{ secrets.USERNAME }} password ${{ secrets.FTP_PASSWORD }}" > ~/.netrc
+
+    - name: 🔝 Upload files
+      run: lftp -e "mirror --parallel=100 -R ./dist ${{ secrets.REMOTE_DIR}}" ${{ secrets.DOMAIN }}
