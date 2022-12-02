@@ -15,7 +15,7 @@ jobs:
     
     steps:
     - name: 🌍 Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: 🌍 Using PNPM
       uses: pnpm/action-setup@v2
@@ -23,13 +23,16 @@ jobs:
         version: 6.0.2
     
     - name: 🌍 Install Node.js
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
-        node-version: 16.x
+        node-version: 18.x
 
     - name: 📦 Install NPM packages
       run: pnpm i
     
+    - name: 🤓 Run Linter
+      run: pnpm run linter
+
     - name: 🔧 Build project
       run: pnpm run build
 
