@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    name: Build
+    name: 😵‍💫 Build & Deploy
     runs-on: ubuntu-latest
     
     steps:
@@ -43,4 +43,4 @@ jobs:
       run: echo "machine ${{ secrets.DOMAIN }} login ${{ secrets.USERNAME }} password ${{ secrets.FTP_PASSWORD }}" > ~/.netrc
 
     - name: 🔝 Upload files
-      run: lftp -e "mirror --parallel=100 -R ./dist ${{ secrets.REMOTE_DIR}}" ${{ secrets.DOMAIN }}
+      run: lftp -e "mirror --parallel=100 -R ./dist/* ${{ secrets.REMOTE_DIR}}" ${{ secrets.DOMAIN }}
