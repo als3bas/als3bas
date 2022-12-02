@@ -6,9 +6,7 @@ function App() {
     <>
       <header>
         <div className="bg-white shadow">
-          <Header title="Álvaro Sebastián" subtitle="Software Developer">
-            Álvaro Sebastián
-          </Header>
+          <Header title="Álvaro Sebastián" subtitle="Software Developer" />
         </div>
       </header>
       <main>

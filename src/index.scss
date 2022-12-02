@@ -5,3 +5,15 @@
 body {
   font-family: 'Nunito', sans-serif;
 }
+
+ul {
+  li {
+    a:hover { 
+      color: cadetblue
+    }
+  }
+  &.others {
+    list-style-type: "📁 ";
+    list-style-position: inside;
+  }
+}

@@ -1,6 +1,4 @@
 import PropTypes from 'prop-types';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import FooterCard from './FooterCard';
 
 function Footer() {
@@ -28,11 +26,27 @@ function Footer() {
 
           </div>
         </FooterCard>
-        <FooterCard title="Redes Sociales">
-          Pronto
-        </FooterCard>
         <FooterCard title="Otros">
-          Pronto
+          <ul className="others">
+            <li>
+              <a href="https://github.com/sebalvaro/zsh-personal-config" target="_blank" rel="noreferrer">
+                Zsh Custom Config
+              </a>
+            </li>
+          </ul>
+        </FooterCard>
+        <FooterCard title="Contacto y Redes Sociales">
+          <ul className="">
+            <li>
+              <a href="https://github.com/sebalvaro" target="_blank" rel="noreferrer">💻 Github</a>
+            </li>
+            <li>
+              <a href="mailto:hola@asgg.cl" rel="noreferrer">✉️ Correo: hola[at]asgg.cl</a>
+            </li>
+            <li>
+              <a href="https://instagram.com/_sebalvaro" target="_blank" rel="noreferrer">📸 Instagram @sebalvaro_</a>
+            </li>
+          </ul>
         </FooterCard>
       </div>
 
