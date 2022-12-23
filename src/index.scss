@@ -12,6 +12,14 @@ ul {
       color: cadetblue
     }
   }
+  &.learning { 
+    list-style-type: "🧠 ";
+    list-style-position: inside;
+  }
+  &.skills {
+    list-style-type: "⚡ ";
+    list-style-position: inside;
+  }
   &.others {
     list-style-type: "📁 ";
     list-style-position: inside;

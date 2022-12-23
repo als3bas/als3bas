@@ -11,7 +11,8 @@ function App() {
       </header>
       <main>
         <div className="mx-auto max-w-7xl py-6 px-6">
-          😊
+          😀 My personal website, built with React and TailwindCSS.
+          This is my first time with those frameworks, expect some bugs and bad practices.
         </div>
       </main>
       <footer>

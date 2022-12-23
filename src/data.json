@@ -1,0 +1,78 @@
+{
+  "info": {
+    "name": "Álvaro Sebastián",
+    "age": 26,
+    "location": "Quillota, Chile",
+    "email": "hola@asgg.cl",
+    "education": {
+      "title": "University technician in computer science",
+      "institution": "UTFSM"
+    },
+    "job": {
+      "position": "Backend Developer",
+      "company": "Jumpitt Labs SpA",
+      "where": "Valparaíso, Chile"
+    },
+    "hobbies": [
+      {
+        "icon": "🈂️",
+        "name": "Manga Reader & collector"
+      },
+      {
+        "icon": "📸",
+        "name": "Photography enthusiast"
+      }
+    ]
+  },
+  "links": [
+    {
+      "name": "Boxes.py - Mirror",
+      "url": "https://boxes.asgg.cl"
+    },
+    {
+      "name": "Personal Zsh Config",
+      "url": "https://github.com/sebalvaro/zsh-personal-config"
+    }
+  ],
+  "learning": [
+    "Swift",
+    "Kotlin",
+    "ReactJS",
+    "TailWind CSS",
+    "Go",
+    "Dart",
+    "Flutter",
+    "GraphQL",
+    "Prisma",
+    "HyperExpress",
+    "Web Sockets",
+    "Deno",
+    "VideoGame dev"
+  ],
+  "skills": [
+    "Git",
+    "PHP",
+    "Laravel",
+    "Github",
+    "NodeJS",
+    "Express",
+    "MongoDB",
+    "PostgreSQL",
+    "Javascript",
+    "Typescript",
+    "EcmaScript",
+    "Docker",
+    "Docker Compose",
+    "Scrum",
+    "Kanban",
+    "HTML/CSS",
+    "Python",
+    "REST",
+    "Web Scraping",
+    "Jira",
+    "MySQL",
+    "SQLite",
+    "Knex",
+    "ObjectionJS"
+  ]
+}
