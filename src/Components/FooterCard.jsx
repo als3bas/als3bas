@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 function FooterCard({ children, title }) {
   return (
-    <div className="border shadow rounded-md p-3">
+    <div className="border shadow rounded-md p-3 footer-card">
       <h1 className="text-xl font-bold pb-2">{title}</h1>
       <span className="text-sm">
         {children}

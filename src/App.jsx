@@ -10,7 +10,7 @@ function App() {
         </div>
       </header>
       <main>
-        <div className="mx-auto max-w-7xl py-6 px-6">
+        <div id="welcome-message" className="mx-auto max-w-7xl py-6 px-6">
           😀 My personal website, built with React and TailwindCSS.
           This is my first time with those frameworks, expect some bugs and bad practices.
         </div>
