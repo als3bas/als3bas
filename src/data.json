@@ -26,6 +26,14 @@
   },
   "links": [
     {
+      "name": "Minecraft server with GraalVM & PaperMC",
+      "url": "https://github.com/als3bas/docker-purpurmc-zulu"
+    },
+    {
+      "name": "Minecraft Server with Azul Zulu & PurpurMC",
+      "url": "https://github.com/als3bas/docker-papermc-graalvm"
+    },
+    {
       "name": "Boxes.py - Mirror",
       "url": "https://boxes.asgg.cl"
     },
