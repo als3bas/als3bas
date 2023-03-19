@@ -10,8 +10,7 @@
     },
     "job": {
       "position": "Backend Developer",
-      "company": "Jumpitt Labs SpA",
-      "where": "Valparaíso, Chile"
+      "where": "Somewhere, Chile"
     },
     "hobbies": [
       {
@@ -26,19 +25,19 @@
   },
   "links": [
     {
-      "name": "Minecraft server with Zulu OpenJDK and Fabric Mod Loader / Server",
+      "name": "Minecraft Server with Zulu OpenJDK and Fabric Mods",
       "url": "https://github.com/als3bas/docker-fabric-zulu"
-    },
-    {
-      "name": "Minecraft server with GraalVM & PaperMC",
-      "url": "https://github.com/als3bas/docker-purpurmc-zulu"
     },
     {
       "name": "Minecraft Server with Azul Zulu & PurpurMC",
       "url": "https://github.com/als3bas/docker-papermc-graalvm"
     },
     {
-      "name": "Boxes.py - Mirror",
+      "name": "Minecraft Server with GraalVM & PaperMC",
+      "url": "https://github.com/als3bas/docker-purpurmc-zulu"
+    },
+    {
+      "name": "Boxes.py - Mirror (Sorry, it's private right now)",
       "url": "https://boxes.asgg.cl"
     },
     {

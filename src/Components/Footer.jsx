@@ -83,10 +83,13 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="https://github.com/sebalvaro" target="_blank" rel="noreferrer">🐙 My Github</a>
+              <a href="https://github.com/als3bas" target="_blank" rel="noreferrer">🐙 My Github</a>
             </li>
             <li>
               <a href="https://instagram.com/_sebalvaro" target="_blank" rel="noreferrer">📸 IG @sebalvaro_</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/alvarogodoyg/" target="_blank" rel="noreferrer">💼 My Linkedin</a>
             </li>
             <li>
               <a href="https://www.last.fm/user/mellamoarbaro">
