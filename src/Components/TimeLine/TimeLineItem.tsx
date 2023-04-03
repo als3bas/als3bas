@@ -1,30 +1,32 @@
-import { PropTypes } from 'prop-types';
 import {
   TimelineOppositeContent,
   TimelineItem,
   TimelineSeparator,
   TimelineConnector,
   TimelineDot,
-  TimelineContent,
+  TimelineContent
 } from '@mui/lab';
-import Icon from '@mdi/react';
-import {
-  mdiAccount,
-  mdiSchool,
-  mdiBriefcase,
-  mdiCodeJson,
-} from '@mdi/js';
+import { Icon } from '@mdi/react';
+import { mdiAccount, mdiSchool, mdiBriefcase, mdiCodeJson } from '@mdi/js';
+import { type TimeLineItemProps, type IconMap } from '../../Types/TimeLine';
 
-const iconMap = {
+const iconMap: IconMap = {
   school: mdiSchool,
   job: mdiAccount,
   briefcase: mdiBriefcase,
-  code: mdiCodeJson,
+  code: mdiCodeJson
 };
 
 function TimeLineItem({
-  place, startDate, endDate, icon, title, description, color,
-}) {
+  place,
+  startDate,
+  endDate,
+  icon,
+  title,
+  description,
+  color,
+  order
+}: TimeLineItemProps) {
   return (
     <TimelineItem>
       <TimelineOppositeContent
@@ -33,15 +35,13 @@ function TimeLineItem({
         variant="body2"
         color="text.secondary"
       >
-
         <div className="text-white text-opacity-20">
           <div className="font-black">
             {startDate}
-            {endDate ? ` - ${endDate}` : ''}
+            {(endDate != null) ? ` - ${endDate}` : ''}
           </div>
           <div className="italic">{place}</div>
         </div>
-
       </TimelineOppositeContent>
       <TimelineSeparator>
         <TimelineConnector className="opacity-25" />
@@ -60,19 +60,8 @@ function TimeLineItem({
   );
 }
 
-TimeLineItem.propTypes = {
-  place: PropTypes.string.isRequired,
-  startDate: PropTypes.string.isRequired,
-  endDate: PropTypes.string,
-  icon: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  color: PropTypes.string,
-};
-
 TimeLineItem.defaultProps = {
-  color: 'primary',
-  endDate: null,
+  color: 'warning'
 };
 
 export default TimeLineItem;

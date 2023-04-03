@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
+import { type MeCardProps } from '../../Types/MeCard';
 
-function MeCard({ children, title }) {
+function MeCard({ children, title }: MeCardProps) {
   return (
     <div className="pb-10">
       <h1 className="font-bold text-xl uppercase text-center text-white text-opacity-60">
@@ -11,10 +11,5 @@ function MeCard({ children, title }) {
     </div>
   );
 }
-
-MeCard.propTypes = {
-  children: PropTypes.node.isRequired,
-  title: PropTypes.string.isRequired,
-};
 
 export default MeCard;

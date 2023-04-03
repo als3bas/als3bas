@@ -1,37 +1,32 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "extends": [
-        "airbnb",
-        "plugin:react/recommended",        
-        "plugin:react/jsx-runtime"
-        
-    ],
-    "overrides": [],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-        "indent": ["error", 2, { "SwitchCase": 1 }],
-        "linebreak-style": ["error", "unix"],
-        "semi": ["error", "always"],
-        "no-unused-vars": "warn",
-        "no-console": "warn",
-        "comma-dangle": [
-            "error",
-            {
-              "arrays": "always-multiline",
-              "objects": "always-multiline",
-              "imports": "always-multiline",
-              "exports": "always-multiline",
-              "functions": "never"
-            }
-          ]
+  "settings": {
+    "react": {
+      "version": "detect"
     }
+  },
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["plugin:react/recommended", "standard-with-typescript"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react"],
+  "ignorePatterns": ["temp.js", "**/*.js", "**/*.json"],
+  "rules": {
+    "@typescript-eslint/semi": ["error", "always"],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": ["off"],
+    "@typescript-eslint/space-before-function-paren": ["off"],
+    "@typescript-eslint/strict-boolean-expressions": "off"
+  },
+  "overrides": []
 }

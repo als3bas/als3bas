@@ -1,10 +1,8 @@
-import PropTypes from 'prop-types';
 import { Grid } from '@mui/material';
+import { type MeProps } from '../../Types/MeCard';
 import MeCard from './MeCard';
 
-function Me({
-  info, learning, skills,
-}) {
+function Me({ info, learning, skills }: MeProps) {
   return (
     <>
       <h1 className="text-4xl py-10 font-bold text-center uppercase">
@@ -26,9 +24,7 @@ function Me({
         <Grid item xs={12} md={6}>
           <MeCard title="Hobbies">
             {info.hobbies.map((h) => (
-              <li key={h.name}>
-                {`${h.icon} ${h.name}`}
-              </li>
+              <li key={h.name}>{`${h.icon} ${h.name}`}</li>
             ))}
           </MeCard>
         </Grid>
@@ -59,17 +55,9 @@ function Me({
             </ul>
           </MeCard>
         </Grid>
-
       </Grid>
-
     </>
   );
 }
-
-Me.propTypes = {
-  info: PropTypes.objectOf(Object).isRequired,
-  learning: PropTypes.arrayOf(PropTypes.string).isRequired,
-  skills: PropTypes.arrayOf(PropTypes.string).isRequired,
-};
 
 export default Me;
