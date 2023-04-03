@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "pnpm run linter && tsc && vite build",
     "preview": "vite preview",
     "linter": "npx eslint --ext .tsx --ext .ts src/"
   },
