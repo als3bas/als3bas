@@ -9,38 +9,38 @@ jobs:
   build:
     name: 😵‍💫 Build & Deploy
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: 🌍 Checkout code
-      uses: actions/checkout@v3
+      - name: 🌍 Checkout code
+        uses: actions/checkout@v3
 
-    - name: 🌍 Using PNPM
-      uses: pnpm/action-setup@v2
-      with:
-        version: latest
-    
-    - name: 🌍 Install Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18.x
+      - name: 🌍 Using PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
 
-    - name: 📦 Install NPM packages
-      run: pnpm i
-    
-    - name: 🤓 Run Linter
-      run: pnpm run linter
+      - name: 🌍 Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
 
-    - name: 🔧 Build project
-      run: pnpm run build
+      - name: 📦 Install NPM packages
+        run: pnpm i
 
-    - name: 📦 Install FTP
-      run: sudo apt install lftp
+      - name: 🤓 Run Linter
+        run: pnpm run linter
 
-    - name: 🛠️ Configure FTP
-      run: mkdir ~/.lftp && echo "set ssl:verify-certificate false;" >> ~/.lftp/rc
+      - name: 🔧 Build project
+        run: pnpm run build
 
-    - name: 🔓 Load Secrets
-      run: echo "machine ${{ secrets.DOMAIN }} login ${{ secrets.USERNAME }} password ${{ secrets.FTP_PASSWORD }}" > ~/.netrc
-
-    - name: 🔝 Upload files
-      run: lftp -e "mirror --parallel=100 -R ./dist/ ${{ secrets.REMOTE_DIR}}" ${{ secrets.DOMAIN }}
+      - name: 🆙 Upload to SCP
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
+          source: "./dist/*"
+          target: ${{ secrets.TARGET }}
+          overwrite: true
+          strip_components: 1

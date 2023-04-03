@@ -1,0 +1,205 @@
+{
+  "info": {
+    "name": "Álvaro Sebastián",
+    "age": 26,
+    "email": "hola[at]asgg.cl",
+    "education": {
+      "title": "University Technician in Computer Science",
+      "institution": "Universidad Ténica Federico Santa María"
+    },
+    "job": {
+      "position": "Backend Developer",
+      "where": "Somewhere, Chile"
+    },
+    "hobbies": [
+      {
+        "icon": "🈂️",
+        "name": "Manga Reader & collector"
+      },
+      {
+        "icon": "📸",
+        "name": "Photography enthusiast"
+      }
+    ]
+  },
+  "links": {
+    "social_networks": [
+      {
+        "name": "My Github",
+        "url": "https://github.com/als3bas",
+        "emoji": "🐙"
+      },
+      {
+        "name": "My Linkedin",
+        "url": "https://www.linkedin.com/in/alvarogodoyg/",
+        "emoji": "💼"
+      },
+      {
+        "name": "My Whakoom",
+        "url": "https://www.whakoom.com/sebalvaro",
+        "emoji": "📚"
+      },
+      {
+        "name": "My Instagram",
+        "url": "https://instagram.com/_sebalvaro",
+        "emoji": "📸"
+      },
+      {
+        "name": "My last.fm profile",
+        "url": "https://www.last.fm/user/mellamoarbaro",
+        "emoji": "🎵"
+      }
+    ],
+    "personal_stuff": [
+      {
+        "name": "Minecraft Server with Zulu OpenJDK and Fabric Mods",
+        "url": "https://github.com/als3bas/docker-fabric-zulu",
+        "emoji": "🧱"
+      },
+      {
+        "name": "Minecraft Server with Azul Zulu & PurpurMC",
+        "url": "https://github.com/als3bas/docker-purpurmc-zulu",
+        "emoji": "🧱"
+      },
+      {
+        "name": "Minecraft Server with GraalVM & PaperMC",
+        "url": "https://github.com/als3bas/docker-papermc-graalvm",
+        "emoji": "🧱"
+      },
+      {
+        "name": "Boxes.py - Mirror (Sorry, it's private right now)",
+        "url": "https://boxes.asgg.cl",
+        "emoji": "📦"
+      },
+      {
+        "name": "Personal Zsh Config",
+        "url": "https://github.com/als3bas/zsh-personal-config",
+        "emoji": "🐚"
+      }
+    ]
+  },
+  "learning": [
+    "Swift",
+    "Kotlin",
+    "ReactJS",
+    "TailWind CSS",
+    "Go",
+    "Dart",
+    "Flutter",
+    "GraphQL",
+    "Prisma",
+    "HyperExpress",
+    "Web Sockets",
+    "Deno",
+    "VideoGame dev"
+  ],
+  "skills": [
+    "Git",
+    "PHP",
+    "Laravel",
+    "Github",
+    "NodeJS",
+    "Express",
+    "MongoDB",
+    "PostgreSQL",
+    "Javascript",
+    "Typescript",
+    "EcmaScript",
+    "Docker",
+    "Docker Compose",
+    "Scrum",
+    "Kanban",
+    "HTML/CSS",
+    "Python",
+    "REST",
+    "Web Scraping",
+    "Jira",
+    "MySQL",
+    "SQLite",
+    "Knex",
+    "ObjectionJS"
+  ],
+  "timeline": [
+    {
+      "order": 1,
+      "place": "Universidad Ténica Federico Santa María",
+      "start_date": "2017",
+      "end_date": null,
+      "icon": "school",
+      "title": "University technician in computer science",
+      "description": "I studied computer science at Federico Santa María University, where I learned the basics of programming, databases, web development, and more."
+    },
+    {
+      "order": 2,
+      "place": "Universidad Ténica Federico Santa María",
+      "start_date": "2018",
+      "end_date": null,
+      "icon": "school",
+      "title": "Programming Elements Assistant",
+      "description": "I worked as a teaching assistant for the course \"Programming Elements\" during the second semester of 2018"
+    },
+    {
+      "order": 3,
+      "place": "Universidad Ténica Federico Santa María",
+      "start_date": "2018",
+      "end_date": null,
+      "icon": "school",
+      "title": "Peer Tutor",
+      "description": "As a peer tutor in the 'Peer Tutor' program, I helped first-year students with their academic integration"
+    },
+    {
+      "order": 4,
+      "place": "Universidad Ténica Federico Santa María",
+      "start_date": "2018",
+      "end_date": null,
+      "icon": "school",
+      "title": "Programming Fundamentals Assistant",
+      "description": "I worked as a teaching assistant for the course \"Programming Fundamentals\" during the first semester of 2018"
+    },
+    {
+      "order": 5,
+      "place": "Prosys SpA (internship)",
+      "start_date": "Oct 2019",
+      "end_date": "Nov 2019",
+      "icon": "briefcase",
+      "title": "Software Developer Intern",
+      "description": "Collaborated on software development using various technologies and programming languages, including developing a P.W.A. using ionic4 and angular, as well as contributing to projects in Laravel."
+    },
+    {
+      "order": 6,
+      "place": "Prosys SpA",
+      "start_date": "Dec 2019",
+      "end_date": "Sep 2020",
+      "icon": "code",
+      "title": "Software Developer",
+      "description": "I worked as a Software Developer, where I developed backends in Laravel and frontends in Ionic 4 (PWA) for multiple projects. I also gained experience in web scraping using Beautifulsoup for Mercado Público."
+    },
+    {
+      "order": 7,
+      "place": "Jumpitt Labs SpA",
+      "start_date": "Oct 2020",
+      "end_date": "Oct 2021",
+      "icon": "code",
+      "title": "Back End Developer (Riivi)",
+      "description": "Developed REST APIs using NodeJS, KoaJS, ObjectionJS, JWT, OAuth, and Docker. Managed databases using PostgreSQL and MongoDB."
+    },
+    {
+      "order": 8,
+      "place": "Jumpitt Labs SpA",
+      "start_date": "Oct 2021",
+      "end_date": "Mar 2023",
+      "icon": "code",
+      "title": "Back-end Developer - Imed",
+      "description": "Responsible for developing REST APIs using NodeJS, Fastify, ObjectionJS, Docker, managing PostgreSQL and MongoDB databases. Focused on building efficient and scalable systems for high data and traffic loads."
+    },
+    {
+      "order": 9,
+      "place": "i-CAR SpA.",
+      "start_date": "Feb 2023",
+      "end_date": "Present",
+      "icon": "code",
+      "title": "Backend Developer",
+      "description": "Responsible for API Rest Development and Web Scraping."
+    }
+  ]
+}

@@ -1,5 +1,8 @@
-import Button from './Button';
-import Header from './Header';
-import Footer from './Footer';
+import TimeLine from './TimeLine/TimeLine';
+import Hero from './Hero/Hero';
+import Footer from './Footer/Footer';
+import Me from './Me/Me';
 
-export { Button, Header, Footer };
+export {
+  TimeLine, Hero, Footer, Me,
+};

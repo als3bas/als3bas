@@ -1,22 +1,35 @@
-import { useState } from 'react';
-import { Button, Header, Footer } from './Components';
+import { Container } from '@mui/material';
+import {
+  TimeLine, Hero, Footer, Me,
+} from './Components';
+
+import {
+  timeline, info, learning, skills, links,
+} from './data.json';
 
 function App() {
   return (
     <>
-      <header>
-        <div className="bg-white shadow">
-          <Header title="Álvaro Sebastián" subtitle="Software Developer" />
-        </div>
-      </header>
-      <main>
-        <div className="mx-auto max-w-7xl py-6 px-6">
-          😊
-        </div>
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Hero
+        info={info}
+      />
+
+      <Container maxWidth="md">
+        <Me
+          info={info}
+          learning={learning}
+          skills={skills}
+        />
+      </Container>
+
+      {/* TimeLine  */}
+      <Container maxWidth="md">
+        <TimeLine timeline={timeline} />
+      </Container>
+
+      <Container maxWidth="md">
+        <Footer links={links} />
+      </Container>
     </>
   );
 }
