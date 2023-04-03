@@ -1,8 +1,6 @@
-import PropTypes from 'prop-types';
+import { type HeroProps } from '../../Types/Hero';
 
-function Introduction({
-  info,
-}) {
+function Introduction({ info }: HeroProps) {
   return (
     <div>
       <div className="hero relative">
@@ -17,21 +15,13 @@ function Introduction({
             <p className="italic">
               {`${info.job.position} at ${info.job.where}`}
             </p>
-            <p className="italic text-sm">
-              {info.education.title}
-            </p>
-            <p className="font-bold text-sm">
-              {info.education.institution}
-            </p>
+            <p className="italic text-sm">{info.education.title}</p>
+            <p className="font-bold text-sm">{info.education.institution}</p>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
-Introduction.propTypes = {
-  info: PropTypes.objectOf(Object).isRequired,
-};
 
 export default Introduction;

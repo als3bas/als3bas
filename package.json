@@ -1,13 +1,13 @@
 {
-  "name": "sebalvaro",
+  "name": "als3bas-revamped",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "pnpm run linter && vite build",
+    "build": "tsc && vite build",
     "preview": "vite preview",
-    "linter": "npx eslint --ext .jsx --ext .js src/"
+    "linter": "npx eslint --ext .tsx --ext .ts src/"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -23,21 +23,23 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "babel-plugin-macros": "^3.1.0",
-    "@nabla/vite-plugin-eslint": "^1.4.1",
-    "@types/react": "^18.0.22",
-    "@types/react-dom": "^18.0.7",
-    "@vitejs/plugin-react": "^2.2.0",
-    "autoprefixer": "^10.4.13",
-    "eslint": "^7.32.0 || ^8.2.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "postcss": "^8.4.18",
-    "sass": "^1.56.1",
+    "@mui/types": "^7.2.3",
+    "@types/react": "^18.0.32",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.37.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "postcss": "^8.4.21",
+    "sass": "^1.60.0",
     "tailwindcss": "^3.3.1",
-    "vite": "^3.2.0"
+    "typescript": "^5.0.3",
+    "vite": "^4.2.1"
   }
 }

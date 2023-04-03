@@ -3,6 +3,4 @@ import Hero from './Hero/Hero';
 import Footer from './Footer/Footer';
 import Me from './Me/Me';
 
-export {
-  TimeLine, Hero, Footer, Me,
-};
+export { TimeLine, Hero, Footer, Me };
