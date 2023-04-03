@@ -18,6 +18,7 @@
     }
   },
   "plugins": ["react"],
+  "ignorePatterns": ["temp.js", "**/*.js", "**/*.json"],
   "rules": {
     "@typescript-eslint/semi": ["error", "always"],
     "react/react-in-jsx-scope": "off",
