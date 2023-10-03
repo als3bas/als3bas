@@ -9,7 +9,7 @@ const listData = (data: Links[]) => (
         <a
           target="_blank"
           href={l.url}
-          rel={l?.rel || 'noreferrer'}
+          rel={l?.rel || 'noopener noreferrer'}
         >{`${l.emoji} ${l.name}`}</a>
       </li>
     ))}
