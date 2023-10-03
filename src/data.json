@@ -48,6 +48,12 @@
         "name": "My last.fm profile",
         "url": "https://www.last.fm/user/mellamoarbaro",
         "emoji": "🎵"
+      },
+      {
+        "name": "Mastodon.social",
+        "url": "https://mastodon.social/@als3bas",
+        "emoji": "🐘",
+        "rel": "me"
       }
     ],
     "personal_stuff": [
