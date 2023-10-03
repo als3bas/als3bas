@@ -53,7 +53,7 @@
         "name": "Mastodon.social",
         "url": "https://mastodon.social/@als3bas",
         "emoji": "🐘",
-        "rel": "me"
+        "rel": "me noopener noreferrer"
       }
     ],
     "personal_stuff": [
